@@ -1,0 +1,22 @@
+<div class="center">
+   
+      
+      <label>Name:
+        <input #name required/>
+        <br/>
+      </label>
+      
+      <label>Age:
+        <input #age required/>
+        <br/>
+      </label>
+
+      <label>Pet:
+        <input #pet required/>
+        <br/>
+      </label>
+      
+      <button (click)="saveWizard(name.value, age.value, pet.value)">
+        Save
+      </button>
+</div>

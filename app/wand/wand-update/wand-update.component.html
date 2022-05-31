@@ -1,0 +1,25 @@
+<div class="center">
+    <label>Id:
+        <input #id required/>
+        <br/>
+      </label>
+      
+      <label>Name:
+        <input #name required/>
+        <br/>
+      </label>
+      
+      <label>Strenght:
+        <input #Strenght required/>
+        <br/>
+      </label>
+
+      <label>WizardId:
+        <input #wid required/>
+        <br/>
+      </label>
+      
+      <button (click)="updateWand(id.value, name.value, Strenght.value, wid.value)">
+        Save
+      </button>
+</div>

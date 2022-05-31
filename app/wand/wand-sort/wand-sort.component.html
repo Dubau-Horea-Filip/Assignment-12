@@ -1,0 +1,15 @@
+<div class="center">
+   
+
+    <h2>Wands</h2>
+    <ol class="wands">
+        <li *ngFor="let wand of wands; let i=index"
+        [class.selected]="wand === selectedWand"
+        (click)="onSelect(wand)">
+            {{wand.id}}
+            {{wand.wizardId}}
+            {{wand.name}}
+            {{wand.strength}}
+        </li>
+    </ol>
+</div>

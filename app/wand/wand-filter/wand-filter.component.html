@@ -1,0 +1,33 @@
+<div class="center">
+    <label>Name filter :
+        <input #name/>
+        <br/>
+      </label>
+      <br/>
+      <button (click)="filterWands(name.value)">
+        Filter
+      </button>
+      
+      <ol class="students">
+        <li *ngFor="let wand of wands ">
+          {{wand.name}}
+          {{wand.strength}}
+          {{wand.wizardId}}
+        </li>
+      </ol>
+      
+      
+      <button (click)="filterWandsAngular(name.value)">
+        Filter front
+      </button>
+      
+      <ol class="students">
+        <li *ngFor="let wand of wandsWithAngular">
+            {{wand.name}}
+            {{wand.strength}}
+            {{wand.wizardId}}
+        </li>
+      </ol>
+
+      <button routerLink="/wands">Back</button>
+</div>

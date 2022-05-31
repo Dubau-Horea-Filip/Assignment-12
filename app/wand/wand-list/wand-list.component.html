@@ -1,0 +1,20 @@
+<div class="center">
+    <div *ngIf="selectedWand">
+    <h2>
+      {{selectedWand.name | uppercase}} was selected
+    </h2>
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
+
+    <h2>Wands</h2>
+    <ol class="wands">
+        <li *ngFor="let wand of wands; let i=index"
+        [class.selected]="wand === selectedWand"
+        (click)="onSelect(wand)">
+            {{wand.id}}
+            {{wand.wizardId}}
+            {{wand.name}}
+            {{wand.strength}}
+        </li>
+    </ol>
+</div>

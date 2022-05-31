@@ -1,0 +1,13 @@
+<div *ngIf="wand" class="center">
+    <h2>wand {{wand.name}} details</h2>
+    <div>
+        <label>Name: </label> {{wand.name}}
+    </div>
+    <div>
+        <label>Streangth: </label> {{wand.strength}}
+    </div>
+    <div>
+        <label>WizardId: </label> {{wand.wizardId}}
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>

@@ -1,0 +1,30 @@
+<div *ngIf="wizard" class="center">
+    <h2>wizard {{wizard.name}} details</h2>
+   
+    <label>Name: {{wizard.name}}
+        <input #name required/>
+        <br/>
+      </label>
+      
+      <label>Age:
+        {{wizard.age}}
+        <input #age required/>
+        <br/>
+      </label>
+
+      <label>Pet:
+        {{wizard.pet}}
+        <input #pet required/>
+        <br/>
+      </label>
+      
+
+        <br>
+      <button (click)="updateWizard( name.value, age.value, pet.value )">
+        Save
+      </button>
+
+   
+</div>
+
+<button (click)="goBack()">Back</button>
